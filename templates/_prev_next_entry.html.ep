@@ -1,0 +1,13 @@
+<div class="prev-next-links">
+  % if ($prev_entry) {
+      <a class="prev-link" href="/entry/<%= $prev_entry->{id} %>">
+        Previous post: <%== $prev_entry->{title} %>
+      </a>
+  % }
+
+  % if ($next_entry) {
+      <a class="next-link" href="/entry/<%= $next_entry->{id} %>">
+        Next post: <%== $next_entry->{title} %>
+      </a>
+  % }
+</div>

@@ -1,0 +1,85 @@
+/* Apart from the title, the pages are laid out in two columns. On smaller
+   screens, these get collapsed into one column.
+
+   .blog-grid - the outermost div that contains the layout
+     .grid-main-section - contains the main content of the page
+     .grid-sidebar - a sidebar, which contains links and other information
+       .mini-about - a photo and a small blurb
+       .sidebar-box - other links to navigate around the site
+
+   Each screen size has different amounts of padding for the white boxes, more
+   padding when the screen is bigger
+*/
+
+/* For both small and medium screens, hide the sidebar-box. Links will be
+   displayed at the top instead. The mini-about is shown at the very bottom */
+@media (max-width: 1150px) {
+    .sidebar-box {
+        display: none;
+    }
+}
+
+/* Small screens, blog posts are single column,
+   and take up almost the full width */
+@media (max-width: 600px) {
+    body {
+        width: 95%;
+    }
+    .white-box-container {
+        padding: 5px 10px;
+    }
+}
+
+/* Medium screens, blog posts are single column,
+   but don't take up full width */
+@media (min-width: 600px) {
+    body {
+        width: 600px;
+    }
+    .white-box-container {
+        padding: 5px 20px;
+    }
+}
+
+/* Large screens, blog posts are two columns, with the sidebar on the left,
+   and the main content on the right. The links outside of the boxes are hidden
+*/
+@media (min-width: 1150px) {
+    body {
+        width: 1100px;
+    }
+
+    .white-box-container {
+        padding: 5px 45px;
+    }
+
+    .blog-grid {
+        display: flex;
+        flex-direction: row-reverse;
+        column-gap: 40px;
+    }
+
+    .grid-main-section {
+        flex: 0 0 550px;
+    }
+
+    .sidebar-box {
+        padding: 25px 25px 5px;
+        position: sticky;
+        /*position:-webkit-sticky;*/
+        top: 25px;
+
+        /* I need this for the sticky-ness to work */
+        align-self: flex-start;
+
+        margin-bottom: 0;
+    }
+
+    .top-links,
+    body > .prev-next-links,
+    body > .tag-description,
+    body > .search-bar {
+        display: none;
+    }
+}
+

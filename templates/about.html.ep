@@ -1,0 +1,65 @@
+%# The "About" page
+% layout 'page_wrapper', title => 'Flailing in my Kitchen';
+
+<style>
+  /* only show the photo on large screens */
+  @media (max-width: 1200px) {
+      #about-pic { display: none }
+  }
+
+   /* make the main section wider than usual just for the sake of not having a
+      gigantic photo of myself smack you in the face */
+  .grid-main-section { flex: 0 0 700px }
+</style>
+
+<div class="blog-grid">
+  <div class="grid-main-section white-box-container">
+    <h1 class="blog-post-title">So what's this "food blog" about?</h1>
+
+    <!-- intro -->
+    <p>
+    You know how food blogs always have a super long, annoying backstory that goes along with every single recipe? Well, this food blog is nothing but the annoying backstories.
+    </p>
+
+    <hr>
+
+    <!-- personal stuff about me -->
+    <p>
+    I started this blog back in 2019 when my sister was staying with me while she worked at a local restaurant for her externship. I had recently gotten really into cooking, and I wanted to document the things I was making. I would cook for my sister, and she would photograph the food that I made. She is much better at cooking <i>and</i> at photography than I am, but I try.
+    </p>
+    <p>
+    I hated cooking when I was younger. My mom might have tried to teach me how to cook, but I could never learn, and I had resorted to just eating out forever. But my desire to save money overtook my desire to never cook, and after about fifty terrible home cooked meals, I finally stopped hating it.
+    </p>
+    <p>
+    Now I'm always thinking about my next seven meals. How can I save money? How can I use up what I have? How can I make the next meal taste better than this one? Sometimes cooking is just a mess, and other times I think to myself "Damn, what a good meal." I think both are worthwhile experiences.
+    </p>
+    <p>
+    And I weirdly love blogging. I always have, even after it stopped being cool. So I'm here to share my thoughts about food and show you my struggles and successes in the kitchen. And maybe one day I'll post some recipes. Maybe.
+    </p>
+
+    <hr>
+
+    <!-- technical stuff, sorta -->
+    <p>
+    I initially wanted to use Instagram for this, but for some reason <a href="/entry/18">I couldn't figure out how to make it work</a>. I used Wordpress for a while, but I eventually got tired of that, and I ended up redesigning the website using a blogging engine that I wrote myself!
+    </p>
+    <p>
+    I like doing the whole coding thing, so part of the reason I have this blog is to give myself a fun tech project to work on. If you want to follow this, I have an <a href="/rss">RSS feed</a>. If you don't know how RSS feeds work and you want email updates, feel free to send me an email at meylingtaing@gmail.com.
+    </p>
+
+    <hr>
+
+    <!-- outtro -->
+    <p>
+    If you happen to be reading my posts and you have any comments or if anything makes you smile or laugh, please let me know in whatever way you know how to communicate with me. I'd appreciate it (:
+    </p>
+  </div> <!-- main section -->
+
+  <div class="grid-sidebar">
+    <img id="about-pic" src="https://cdn.meylingtaing.com/images/2023/06/2023-06-11_me-holding-pasta.jpg">
+    <div class="sidebar-box white-box-container">
+      %= include '_sidebar_links';
+    </div>
+  </div> <!-- sidebar -->
+
+</div> <!-- grid -->

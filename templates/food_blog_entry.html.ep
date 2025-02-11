@@ -1,0 +1,20 @@
+% layout 'page_wrapper', title => 'Flailing in my Kitchen';
+
+  <div class="blog-grid">
+
+    <div class="grid-main-section white-box-container">
+    %=  include '_blog_entry', update => $update;
+    <br>
+    </div> <!-- col 1 -->
+
+    <div class="grid-sidebar">
+      %= include '_mini_about';
+      <div class="sidebar-box white-box-container">
+        %= include '_sidebar_links';
+        %#= include '_prev_next_entry';
+      </div>
+    </div> <!-- col 2 -->
+
+  </div> <!-- grid -->
+
+  <!-- Should add links to the prev and next entry... -->

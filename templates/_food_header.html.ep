@@ -1,0 +1,13 @@
+  <div class="blog-header">
+  <h1 class="blog-title">
+  <a href="/">flailing in my kitchen&nbsp;<sup><span class="small faded-green">v3</span></sup></a>
+  </h1>
+  <div class="blog-tagline">
+  How can I be sad when I have breakfast, lunch, and dinner?
+  </div>
+  <div class="top-links">
+    <a href="/backwards">Recent Posts</a> |
+    <a href="/forwards">Read from the beginning</a> |
+    <a href="/about">About</a>
+  </div>
+  </div>

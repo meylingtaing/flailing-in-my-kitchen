@@ -1,0 +1,201 @@
+body {
+    background-color: #333;
+    color: #CCC; /* basically just the tagline */
+    font-family: "Fira Sans", sans-serif;
+    margin: auto;
+    line-height: 1.5;
+}
+
+/* blog title, tagline, top links */
+.blog-header {
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.blog-title, .blog-title a {
+    font-family: "Handlee";
+    font-size: xxx-large;
+    margin-bottom: 0;
+    color: #1D8;
+    text-decoration: none;
+}
+
+/* used on the v whatever next to the title */
+.faded-green { color: #0A6 }
+.small       { font-size: 50% }
+
+.blog-tagline {
+    font-family: "Handlee";
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+}
+
+.top-links, body > .tag-description {
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+/* links outside the box */
+a {
+    color: #8DF; /* light blue */
+    text-decoration: underline;
+}
+
+/* the white box that surrounds the blog posts */
+.white-box-container {
+    color: #555;
+    background-color: #FFF;
+    margin-bottom: .5rem;
+    border-radius: 5px;
+}
+
+.white-box-container a {
+    color: #098; /* teal */
+    text-decoration: underline;
+}
+
+.prev-next-links {
+    display: flex;
+    margin-bottom: .5rem;
+    column-gap: 10px;
+}
+.prev-link, .next-link {
+    /*flex: 1 1 0px;*/
+}
+a.prev-link, a.next-link {
+    background-color: #0A6;
+    color: #FFF;
+    padding: 2px 6px;
+    border-radius: 5px; /* XXX do I need browser specific rules? */
+    text-decoration: none;
+}
+.next-link {
+    margin-left: auto;
+}
+
+.search-bar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* small pic of me with a short description */
+.mini-about {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    color: #CCC;
+    display: flex;
+    grid-gap: 1rem;
+}
+.mini-about img {
+    clip-path:circle();
+    max-height: 150px; /* XXX: is there a better unit to use here?? */
+}
+
+.grid-sidebar img {
+    margin-bottom: 1rem;
+}
+
+.sidebar-box .link-header {
+    font-family: "Handlee";
+    font-size: 1.25rem;
+}
+
+/* the main divider that gets used */
+hr {
+    border: 0;
+    border-top: 3px dashed #0A6;
+}
+
+/* for styling content inside of a blog post */
+
+/* full width images and embedded videos */
+img {
+    max-width: 100%;
+    margin: auto;
+    display: block;
+}
+iframe { width: 100% }
+video  { width: 100% }
+
+li {
+    margin: .25em 0; /* just a little extra margin between list items */
+}
+
+/* h1: blog post title
+   h2: headers for those times when I basically have multiple blog posts in one
+   it's just "h2" rather than a class because it's what the markdown produces
+*/
+.blog-post-title, .entry-container h2 {
+    font-family: "Handlee";
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* h5: blog post timestamp */
+.blog-post-timestamp {
+    color: #999;
+    text-align: center;
+    margin-top: 0;
+}
+
+blockquote {
+    border-left: 3px dashed #098;
+    padding-left: 1em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+table, tr, td, th {
+    border: 1px solid #098;
+    padding: .25em;
+    border-collapse: collapse;
+}
+
+table {
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.table-wrapper { overflow-x: scroll; }
+
+.tags {
+    font-size: .85rem;
+}
+
+/* divider inside of a blog post */
+.entry-container hr {
+    border: 0;
+    border-top: 2px dashed #098;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 1em;
+}
+
+.continue-reading-link {
+    text-align: right;
+}
+
+/* image caption stuff */
+figure {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+figcaption {
+   font-size: 90%;
+   text-align: center;
+   margin-top: .5em;
+}
+
+/* just so I can display two photos next to each other */
+.two-columns {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}

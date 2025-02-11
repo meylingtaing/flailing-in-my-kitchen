@@ -1,0 +1,3 @@
+  <div class="tag-description">
+      Showing posts filed under: <b><%== stash('tag') %></b>
+  </div>

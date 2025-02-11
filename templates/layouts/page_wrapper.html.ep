@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+   content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="/css/layout1.css">
+  <link rel="stylesheet" href="/css/main9.css">
+  % for my $css (@{ stash('css_files') // [] }) {
+  <link rel="stylesheet" href="/css/<%= $css %>">
+  % }
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Handlee">
+  <title><%= title %></title>
+</head>
+
+<body>
+%= include '_food_header';
+<%= content %>
+%= include '_search_bar';
+</body>
+</html>

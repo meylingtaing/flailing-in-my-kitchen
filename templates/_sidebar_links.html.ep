@@ -1,0 +1,9 @@
+  <div class="link-header">
+  Explore the blog:
+  </div>
+  <ul>
+    <li><a href="/backwards">Recent posts</a></li>
+    <li><a href="/forwards">Read from the beginning</a></li>
+    <li><a href="/random">Random post!</a></li>
+  </ul>
+  %= include '_search_bar';

@@ -1,0 +1,23 @@
+  <div class="prev-next-links">
+    % my ($prev_text, $next_text);
+    % if ($direction eq 'forwards') {
+    %   $prev_text = '<< Older';
+    %   $next_text = 'Newer >>';
+    % }
+    % else {
+    %   $prev_text = '<< Newer';
+    %   $next_text = 'Older >>';
+    % }
+    % if (stash('tag')) { $direction = "tag/" . stash('tag') }
+    % if (defined $prev) {
+        <a class="prev-link" href="/<%= $direction %>/<%= $prev %>">
+          <%= $prev_text %>
+        </a>
+    % }
+
+    % if ($next) {
+        <a class="next-link" href="/<%= $direction %>/<%= $next %>">
+          <%= $next_text %>
+        </a>
+    % }
+  </div>

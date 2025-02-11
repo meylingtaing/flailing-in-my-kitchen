@@ -1,0 +1,46 @@
+%# Used for displaying multiple blog entries on a single page, which is the
+%# default view (forwards or backwards), as well as viewing tags
+
+% layout 'page_wrapper', title => 'Flailing in my Kitchen';
+
+  % if (stash('tag')) {
+  %=  include '_tag_description';
+  % }
+  %= include '_prev_next';
+
+  <div class="blog-grid">
+
+    <div class="grid-main-section white-box-container">
+    % for my $update (@$updates) {
+    %=  include '_blog_entry', update => $update, include_entry_links => 1;
+    %   unless (\$update == \$updates->[-1]) {
+          <hr>
+    %   }
+    % }
+    <br>
+    %= include '_prev_next';
+    </div> <!-- main section, with the blog entries -->
+
+    <div class="grid-sidebar">
+      %= include '_mini_about';
+
+      <div class="sidebar-box white-box-container">
+      %= include '_sidebar_links';
+      % if (stash('tag')) {
+        %= include '_tag_description';
+      % } else {
+        <div class="blog-tagline">Posts on this page:</div>
+      % }
+      <ul>
+      % for my $update (@$updates) {
+          <li><a href="#blog-post-<%== $update->{id} %>">
+            <%== $update->{title} %>
+          </a></li>
+        </a>
+      % }
+      </ul>
+      %= include '_prev_next';
+      </div>
+    </div> <!-- col 2, which is actually the left side -->
+
+  </div> <!-- grid -->

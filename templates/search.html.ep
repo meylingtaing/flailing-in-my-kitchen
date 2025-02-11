@@ -1,0 +1,27 @@
+% layout 'page_wrapper',
+%   title => 'Flailing in my Kitchen';
+
+<div class="blog-grid">
+<div class="grid-main-section white-box-container">
+  <h1 class="blog-post-title">
+    All posts with text: <b><%== stash('search') %></b>
+  </h1>
+
+  <ul>
+  % for my $update (@$updates) {
+      <li>
+        <a href="/entry/<%== $update->{id} %>"><%== $update->{title} %></a>
+      </li>
+  % }
+  </ul>
+</div>
+
+<div class="grid-sidebar">
+  %= include '_mini_about';
+
+  <div class="sidebar-box white-box-container">
+    %= include '_sidebar_links';
+  </div>
+</div>
+
+</div>

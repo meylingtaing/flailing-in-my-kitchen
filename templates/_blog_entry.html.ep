@@ -1,0 +1,26 @@
+    <div class="entry-container">
+      <h1 class="blog-post-title" id="blog-post-<%== $update->{id} %>">
+        % if (stash('include_entry_links')) {
+        <a href="/entry/<%== $update->{id} %>">
+        % }
+          <%== $update->{title} %>
+        % if (stash('include_entry_links')) {
+        </a>
+        % }
+      </h1>
+      <h5 class="blog-post-timestamp">
+        <%= $update->{date} %> <%= $update->{time} %>
+      </h5>
+        <%== $update->{content} %>
+      % if ($update->{truncated}) {
+          <div class="continue-reading-link">
+            <a href="/entry/<%= $update->{id} %>">Continue Reading</a>
+          </div>
+      % }
+      <div class="tags">
+      Filed under:
+      %   for my $tag (@{ $update->{tags} }) {
+          <a href="/tag/<%= "$tag" %>"><%= "$tag" %></a>
+      %   }
+      </div>
+    </div>
