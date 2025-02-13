@@ -1,4 +1,7 @@
 bin/
 cpanfile.snapshot
+db/
 local/
 Makefile
+nginx-conf
+tmp/
