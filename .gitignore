@@ -5,3 +5,4 @@ local/
 Makefile
 nginx-conf
 tmp/
+*.swp
