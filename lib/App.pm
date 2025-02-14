@@ -32,6 +32,7 @@ sub startup {
     $r->get('/random')->to('blog#random_blog_entry',
         db       => $db,
         template => 'food_blog_entry',
+        include_entry_links => 1,
     );
 
     $r->get('/search')->to('blog#search',
