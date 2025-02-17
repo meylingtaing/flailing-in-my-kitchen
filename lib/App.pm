@@ -8,11 +8,10 @@ sub startup {
 
     $app->plugin('Mojolicious::Plugin::Blog');
     $app->config( hypnotoad => { listen => ['http://*:' . $config->{port}] } );
+    $app->defaults(db => $config->{blog_db_file});
 
-    my $db = $config->{blog_db_file};
     my %default = (
         page      => 0,
-        db        => $db,
         template  => 'food_blog',
         direction => 'backwards',
 		truncate  => 1,
@@ -22,15 +21,13 @@ sub startup {
     $r->get('/')->to('blog#blog', %default);
     $r->get('/tag/:tag/:page')->to('blog#blog', %default);
     $r->get('/about');
-    $r->get('/rss')->to('blog#rss', db => "db/Food.sqlite");
+    $r->get('/rss')->to('blog#rss');
 
     $r->get('/entry/:id')->to('blog#blog_entry',
-        db       => $db,
         template => 'food_blog_entry',
     );
 
     $r->get('/random')->to('blog#random_blog_entry',
-        db       => $db,
         template => 'food_blog_entry',
         include_entry_links => 1,
     );
