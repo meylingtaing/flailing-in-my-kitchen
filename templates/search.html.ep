@@ -1,3 +1,5 @@
+%# The search page
+
 % layout 'page_wrapper',
 %   title => 'Flailing in my Kitchen';
 

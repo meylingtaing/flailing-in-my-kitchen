@@ -1,3 +1,5 @@
+%# For displaying a single entry on a page
+
 % layout 'page_wrapper', title => 'Flailing in my Kitchen';
 
   <div class="blog-grid">
