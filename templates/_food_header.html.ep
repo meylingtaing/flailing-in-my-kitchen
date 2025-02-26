@@ -3,7 +3,13 @@
   <a href="/">flailing in my kitchen&nbsp;<sup><span class="small faded-green">v3</span></sup></a>
   </h1>
   <div class="blog-tagline">
-  How can I be sad when I have breakfast, lunch, and dinner?
+    How can I be sad when I have
+    % if (my $tagline_links = stash('tagline_links')) {
+      <%== $tagline_links %>?
+    % }
+    % else {
+      breakfast, lunch, and dinner?
+    % }
   </div>
   <div class="top-links">
     <a href="/backwards">Recent posts</a> |
