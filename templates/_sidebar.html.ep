@@ -1,0 +1,8 @@
+%# For the whole "left side" of the page
+<div class="grid-sidebar">
+  %= include '_mini_about';
+  <div class="sidebar-box white-box-container">
+    %= include '_sidebar_links';
+    <%= $sidebar_content %>
+  </div>
+</div>

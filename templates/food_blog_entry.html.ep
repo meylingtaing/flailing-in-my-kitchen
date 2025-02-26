@@ -4,19 +4,15 @@
 
   <div class="blog-grid">
 
+    <!-- main section, with the blog entry -->
     <div class="grid-main-section white-box-container">
     %=  include '_blog_entry', update => $update;
     <br>
-    </div> <!-- col 1 -->
+    </div>
 
-    <div class="grid-sidebar">
-      %= include '_mini_about';
-      <div class="sidebar-box white-box-container">
-        %= include '_sidebar_links';
-        %#= include '_prev_next_entry';
-      </div>
-    </div> <!-- col 2 -->
+    <!-- the sidebar -->
+    %= include '_sidebar', sidebar_content => '';
 
-  </div> <!-- grid -->
+  </div>
 
   <!-- Should add links to the prev and next entry... -->

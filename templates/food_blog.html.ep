@@ -10,6 +10,7 @@
 
   <div class="blog-grid">
 
+    <!-- main section, with the blog entries -->
     <div class="grid-main-section white-box-container">
     % for my $update (@$updates) {
     %=  include '_blog_entry', update => $update, include_entry_links => 1;
@@ -19,13 +20,10 @@
     % }
     <br>
     %= include '_prev_next';
-    </div> <!-- main section, with the blog entries -->
+    </div>
 
-    <div class="grid-sidebar">
-      %= include '_mini_about';
-
-      <div class="sidebar-box white-box-container">
-      %= include '_sidebar_links';
+    <!-- the sidebar -->
+    % my $sidebar_content = begin
       % if (stash('tag')) {
         %= include '_tag_description';
       % } else {
@@ -40,7 +38,7 @@
       % }
       </ul>
       %= include '_prev_next';
-      </div>
-    </div> <!-- col 2, which is actually the left side -->
+    % end;
+    %= include '_sidebar', sidebar_content => $sidebar_content->()
 
   </div> <!-- grid -->
