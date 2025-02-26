@@ -15,6 +15,7 @@ INSERT INTO Updates VALUES(20,'2019-01-19 13:11:52',replace('I''m exhausted. My 
 INSERT INTO Updates VALUES(21,'2019-01-20 09:37:59',replace('I just happened to be at Trader Joe''s the other day, and I remembered a Budget Bytes recipe that I really wanted to try: [Seafood Rice Skillet](https://www.budgetbytes.com/seafood-rice-skillet/). Now this recipe calls for some sort of seafood mix, but Beth used the one in Trader Joes so I figured, why not.\n\n_Note to self: never buy Trader Joe''s Seafood Blend again. It is tasteless._\n\n![Seafood rice skillet](https://cdn.meylingtaing.com/from-wordpress/2019/01/img_3336.jpg)\n\n^ We take a lot of pictures standing in one particular spot in the kitchen, where the light hits the dish just right.\n\nI followed the recipe exactly, and the end result was a really beautiful dish. I think it needs some adjustments though:\n\n* **Double the seafood**. There is a lot of rice in this, and not enough seafood.\n* **Cook the seafood first**, and mix that in with the rice at the end. I always find cooking seafood with other things to be kind of tricky, but if I cook it by itself then I can get it to just the right amount of done-ness.\n* **Fewer peas**. There were also too many peas for my liking, but let''s be honest, the next time I use frozen peas in a dish, I''m not going to bother actually measuring them.\n\n![Nicely plated seafood rice skillet](https://cdn.meylingtaing.com/from-wordpress/2019/01/img_3363.jpg)\n\n^ The lighting is not as nice on the counter.\n\nOh, and I also replaced parsley with cilantro. Because parsley smells weird and cilantro makes everything better.\n\n![Seafood rice skillet close up](https://cdn.meylingtaing.com/from-wordpress/2019/01/img_3345.jpg)\n\n^ I wanted to up my picture to paragraph ratio.\n\n','\n',char(10)),'Seafood Blend: Part 1',NULL,1,0);
 INSERT INTO Updates VALUES(22,'2019-01-20 14:38:33',replace('...is unfortunately not as successful as part 1.\n\nLast Christmas my aunt made these shrimp avocado cucumber bites, and it was probably the most Californian thing I''ve ever seen. And I was convinced I needed to make these myself. I googled "shrimp guacamole cucumber" and grabbed the first recipe I saw: [Avocado Cucumber Shrimp Appetizers](https://natashaskitchen.com/avocado-cucumber-shrimp-appetizers/) from Natasha''s Kitchen. Now it probably would have made sense to actually buy some shrimp for this, but I had half a bag of seafood blend that I needed to use up.\n\n![Avocado cucumber shrimp appetizers](https://cdn.meylingtaing.com/from-wordpress/2013/06/img_3543.jpg)\n\n^ Man we really should have scooped off the brown parts of the guac before taking a picture.\n\nI also had guacamole that we had made earlier in the week using Skinnytaste''s [Best Guacamole Recipe](https://www.skinnytaste.com/guacamole-4-pts/). So really all I took from that other recipe is the Cajun shrimp part. It wasn''t so bad, but next time we''ll just use shrimp, and actually use freshly made guacamole. Or be lazy and buy it from the store. \n\n![Seafood cooking in the skillet](https://cdn.meylingtaing.com/from-wordpress/2013/06/img_3526.jpg)\n\nWe actually had leftover pieces of seafood, and my sister remarked that we could throw some pasta in it. I checked my cabinets and I found a box of that Banza chickpea pasta...that expired last year. Hey, it''s a box of pasta! It should be fine!\n\n_Second note to self: Do not eat expired chickpea pasta. In fact do not even buy chickpea pasta at all. It is way more expensive than regular pasta and doesn''t taste as good._\n\n![Chickpea pasta](https://cdn.meylingtaing.com/from-wordpress/2013/06/img_3544.jpg)\n\n^ This looks way better than it tastes.\n\n','\n',char(10)),'Seafood Blend: Part 2',NULL,1,0);
 INSERT INTO Updates VALUES(23,'2019-01-24 22:04:58',replace('Man, there are not enough hours in the day. I come home from work, run an errand, cook dinner, eat dinner, wash the dishes, shower, and then it''s already 9pm! And I told myself I was going to prioritize sleep this year. When am I ever going to have time to actually write blog posts?!\n\nI gotta catch up on posting about the things I''ve cooked. So here''s some pork lettuce wraps I made a few weeks ago.\n\n![Pork lettuce wraps](https://cdn.meylingtaing.com/from-wordpress/2019/01/img_3267.jpg)\n\n^ More like "pork on a bed of lettuce" but whatever.\n\nI actually bought lettuce to put in a hamburger, but I used maybe two leaves of it for that so naturally I decided to make lettuce wraps. I really like the [Asian Chicken Lettuce Wrap](https://www.skinnytaste.com/asian-chicken-lettuce-wraps/) recipe from skinnytaste, but I do make a few modifications.\n\n* Replace ground chicken with ground pork.\n* Replace shiitake mushrooms with whatever mushroom is cheapest.\n* Use 2 whole scallions instead of 2 tablespoons of scallion. I don''t even know how you''re supposed to measure scallions in tablespoons.\n* Don''t use iceberg lettuce. It is really hard to eat a lettuce wrap with iceberg lettuce. \n\n![Pork lettuce wrap close up](https://cdn.meylingtaing.com/from-wordpress/2019/01/img_3279.jpg)\n\n^ Close up!\n\nWe used green leaf lettuce...which was also hard to wrap with. Why do people like wrapping things in lettuce anyway? Next time I''ll just make a taco.\n\n','\n',char(10)),'Lettuce Wraps',NULL,1,0);
+INSERT INTO Updates VALUES(27,'2019-01-26 22:45:19',replace('I know they call them "pot stickers" but you really don''t want them to stick to the pot. Because then you can''t take them out of the pot, and you end up with dumplings that are missing bottoms.\n\n![A messy plate of dumplings](https://cdn.meylingtaing.com/from-wordpress/2019/01/img_3434.jpg)\n\n^ Still delicious.\n\nWe switched to a non-stick pan for the second batch. I guess you can''t really tell from the picture though, since the bottoms are hidden.\n\n![A nice plate of dumplings](https://cdn.meylingtaing.com/from-wordpress/2019/01/img_3444.jpg)\n\n^ Note to self: include the dipping sauce in the picture next time.\n\nOne of my friends made a pretty salad to go with the dumplings. Apparently he was supposed to use green onions, but Aldi was out of them so he used red ones instead. Red onion is not a good substitute for green onion.\n\n![Salad with onions, bell peppers, cabbage, and shredded carrots](https://cdn.meylingtaing.com/from-wordpress/2019/01/img_3441.jpg)\n\n^ Also still delicious.\n','\n',char(10)),'Dumpling Party',NULL,1,0);
 CREATE TABLE Tags (
     id integer primary key,
     label text
@@ -25,6 +26,7 @@ INSERT INTO Tags VALUES(58,'failing in my kitchen');
 INSERT INTO Tags VALUES(66,'brussels sprouts');
 INSERT INTO Tags VALUES(101,'pierogies');
 INSERT INTO Tags VALUES(102,'tuna salad');
+INSERT INTO Tags VALUES(109, 'cooking with friends');
 INSERT INTO Tags VALUES(132,'lettuce wrap');
 CREATE TABLE UpdateTags (
     id integer primary key,
@@ -33,6 +35,7 @@ CREATE TABLE UpdateTags (
     foreign key(update_id) references Updates(id),
     foreign key(tag_id) references Tags(id)
 );
+INSERT INTO UpdateTags VALUES(1,27,109);
 INSERT INTO UpdateTags VALUES(563,23,132);
 INSERT INTO UpdateTags VALUES(570,20,101);
 INSERT INTO UpdateTags VALUES(571,20,66);
@@ -41,4 +44,17 @@ INSERT INTO UpdateTags VALUES(574,19,58);
 INSERT INTO UpdateTags VALUES(576,18,6);
 INSERT INTO UpdateTags VALUES(868,22,58);
 INSERT INTO UpdateTags VALUES(875,21,18);
+CREATE TABLE TaglineTags (
+    tag_id integer primary key,
+    is_long_tagline boolean default 0,
+    alt_tagline text,
+    foreign key(tag_id) references Tags(id)
+);
+INSERT INTO TaglineTags VALUES(6, 0, '');
+INSERT INTO TaglineTags VALUES(18, 0, '');
+INSERT INTO TaglineTags VALUES(66, 0, '');
+INSERT INTO TaglineTags VALUES(101, 0, '');
+INSERT INTO TaglineTags VALUES(102, 0, '');
+INSERT INTO TaglineTags VALUES(132, 0, 'lettuce wraps');
+INSERT INTO TaglineTags VALUES(109, 1, 'good friends to cook with');
 COMMIT;
