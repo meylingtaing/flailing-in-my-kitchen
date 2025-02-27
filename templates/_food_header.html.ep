@@ -2,15 +2,24 @@
   <h1 class="blog-title">
   <a href="/">flailing in my kitchen&nbsp;<sup><span class="small faded-green">v3</span></sup></a>
   </h1>
-  <div class="blog-tagline">
-    How can I be sad when I have
+  <!--
+    This is a bit weird, but I'm basically trying to always display the
+    original blog tagline on larger displays (because the modified one appears
+    on the sidebar), but on small displays I will display the modified tagline
+    if that's available. So I'm just using css rules to show one or the other
+  -->
+  <div class="blog-tagline" id="original-blog-tagline">
+    How can I be sad when I have breakfast, lunch, and dinner?
+  </div>
+  <div class="blog-tagline" id="modified-blog-tagline">
     % if (my $tagline_links = stash('tagline_links')) {
-      <%== $tagline_links %>?
+      How can I be sad when I have<br><%== $tagline_links %>?
     % }
     % else {
-      breakfast, lunch, and dinner?
+      How can I be sad when I have breakfast, lunch, and dinner?
     % }
   </div>
+
   <div class="top-links">
     <a href="/backwards">Recent posts</a> |
     <a href="/forwards">Earliest posts</a> |

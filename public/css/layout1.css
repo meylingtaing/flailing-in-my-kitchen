@@ -14,7 +14,7 @@
 /* For both small and medium screens, hide the sidebar-box. Links will be
    displayed at the top instead. The mini-about is shown at the very bottom */
 @media (max-width: 1150px) {
-    .sidebar-box {
+    .sidebar-box, #original-blog-tagline {
         display: none;
     }
 }
@@ -85,7 +85,8 @@
     .top-links,
     body > .prev-next-links,
     body > .tag-description,
-    body > .search-bar {
+    body > .search-bar,
+    #modified-blog-tagline {
         display: none;
     }
 }
