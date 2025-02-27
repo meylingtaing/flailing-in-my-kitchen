@@ -31,6 +31,12 @@ body {
     text-align: center;
 }
 
+.blog-tagline > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1D8;
+}
+
 .top-links, body > .tag-description {
     text-align: center;
     margin-bottom: .5rem;
@@ -82,7 +88,7 @@ a.prev-link, a.next-link {
 
 /* small pic of me with a short description */
 .mini-about {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     margin-top: 2rem;
     color: #CCC;
     display: flex;
