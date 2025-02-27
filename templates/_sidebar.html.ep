@@ -1,8 +1,20 @@
 %# For the whole "left side" of the page
 <div class="grid-sidebar">
+
   %= include '_mini_about';
-  <div class="sidebar-box white-box-container">
-    %= include '_sidebar_links';
-    <%= $sidebar_content %>
+
+  <div class="sidebar-box">
+    <div class="white-box-container">
+      %= include '_sidebar_links';
+      <%= $sidebar_content %>
+    </div>
+
+    % if (my $tagline_links = stash('tagline_links')) {
+      <div class="blog-tagline below-sidebar-box">
+        How can I be sad when I have<br><%== $tagline_links %>?
+      </div>
+    % }
+
   </div>
+
 </div>

@@ -64,7 +64,6 @@
     }
 
     .sidebar-box {
-        padding: 25px 25px 5px;
         position: sticky;
         /*position:-webkit-sticky;*/
         top: 25px;
@@ -73,6 +72,14 @@
         align-self: flex-start;
 
         margin-bottom: 0;
+    }
+
+    .sidebar-box > .white-box-container {
+        padding: 25px 25px 5px;
+    }
+
+    .below-sidebar-box {
+        margin-top: 1em;
     }
 
     .top-links,
