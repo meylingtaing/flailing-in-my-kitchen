@@ -57,8 +57,10 @@
 
   <div class="grid-sidebar">
     <img id="about-pic" src="https://cdn.meylingtaing.com/images/2023/06/2023-06-11_me-holding-pasta.jpg">
-    <div class="sidebar-box white-box-container">
-      %= include '_sidebar_links';
+    <div class="sidebar-box">
+      <div class="white-box-container">
+        %= include '_sidebar_links';
+      </div>
     </div>
   </div> <!-- sidebar -->
 
