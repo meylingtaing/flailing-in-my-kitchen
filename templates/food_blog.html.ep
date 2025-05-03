@@ -27,7 +27,7 @@
       % if (stash('tag')) {
         %= include '_tag_description';
       % } else {
-        <div class="blog-tagline">Posts on this page:</div>
+        <div class="link-header">Posts on this page:</div>
       % }
       <ul>
       % for my $update (@$updates) {
