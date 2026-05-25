@@ -5,7 +5,7 @@
   <meta name="viewport"
    content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="/css/layout2.css">
-  <link rel="stylesheet" href="/css/main10.css">
+  <link rel="stylesheet" href="/css/main11.css">
   % for my $css (@{ stash('css_files') // [] }) {
   <link rel="stylesheet" href="/css/<%= $css %>">
   % }
@@ -17,8 +17,9 @@
 </head>
 
 <body>
-%= include '_food_header';
-<%= content %>
-%= include '_search_bar';
+  %= include '_food_header';
+  <%= content %>
+  %= include '_search_bar';
+  <script src="/js/tooltip.js"></script>
 </body>
 </html>
