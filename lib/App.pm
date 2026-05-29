@@ -1,5 +1,6 @@
 package App;
 use Mojo::Base 'Mojolicious';
+use MarkdownEnhancements qw(process_pre_markdown process_post_markdown);
 
 sub startup {
     my $app = shift;
@@ -8,7 +9,11 @@ sub startup {
 
     $app->plugin('Mojolicious::Plugin::Blog');
     $app->config( hypnotoad => { listen => ['http://*:' . $config->{port}] } );
-    $app->defaults(db => $config->{blog_db_file});
+    $app->defaults(
+        db => $config->{blog_db_file},
+        process_pre_markdown  => sub { process_pre_markdown(@_) },
+        process_post_markdown => sub { process_post_markdown(@_) },
+    );
 
     my %default = (
         page      => 0,
@@ -20,7 +25,9 @@ sub startup {
     my $all_routes = $app->routes;
 
     $all_routes->get('/')->to('blog#blog', %default);
-    $all_routes->get('/rss')->to('blog#rss');
+    $all_routes->get('/rss')->to('blog#rss',
+        title => 'Flailing in my Kitchen',
+        url_base => 'https://flailinginmykitchen.com');
     $all_routes->get('/about');
 
     # Uh, this feels real hack-y, but I want to be able to get a random tag
