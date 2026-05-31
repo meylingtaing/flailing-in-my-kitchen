@@ -1,6 +1,7 @@
 body {
     --text-on-background: #3b3233;
     --link-color: #596de0;
+    --header-font: "Comic Sans MS", "Comic Sans", "Handlee";
     --background-color: #d5e0ff;
     --normal-font: "Fira Sans", sans-serif;
     --accent-color: #dd7f7f;
@@ -35,8 +36,7 @@ body {
 }
 
 .blog-tagline {
-    font-family: "Handlee";
-    font-size: 1.25rem;
+    font-family: var(--header-font);
     margin-bottom: .5rem;
     text-align: center;
 }
@@ -150,8 +150,8 @@ input.button {
 }
 
 .sidebar-box .link-header {
-    font-family: "Handlee";
-    font-size: 1.25rem;
+    font-family: var(--header-font);
+    font-size: 1.25em;
 }
 
 #on-this-page-list {
@@ -185,7 +185,8 @@ li {
    it's just "h2" rather than a class because it's what the markdown produces
 */
 .blog-post-title, .entry-container h2 {
-    font-family: "Handlee";
+    font-family: var(--header-font);
+    font-weight: 500;
     text-align: center;
     margin-bottom: 0;
 }
