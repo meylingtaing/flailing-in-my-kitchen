@@ -127,7 +127,7 @@ input.button {
 
 /* small pic of me with a short description */
 .mini-about {
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
     margin-top: 2rem;
     color: var(--text-on-background);
     display: flex;
