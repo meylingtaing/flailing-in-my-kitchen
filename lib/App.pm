@@ -28,7 +28,6 @@ sub startup {
     $all_routes->get('/rss')->to('blog#rss',
         title => 'Flailing in my Kitchen',
         url_base => 'https://flailinginmykitchen.com');
-    $all_routes->get('/about');
 
     # Uh, this feels real hack-y, but I want to be able to get a random tag
     # on pretty much every page. So we're gonna have this action run before
@@ -36,7 +35,7 @@ sub startup {
     my $r = $all_routes->under('/')->to('root#get_random_tagline');
 
     $r->get('/tag/:tag/:page')->to('blog#blog', %default);
-    $r->get('/about');
+    $r->get('/about')->to(template => 'about');
     $r->get('/rss')->to('blog#rss');
 
     $r->get('/entry/:id')->to('blog#blog_entry',
