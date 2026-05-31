@@ -83,14 +83,46 @@ a.prev-link, a.next-link {
     border-radius: 5px; /* XXX do I need browser specific rules? */
     text-decoration: none;
 }
+
+input.button {
+    background-color: var(--background-color);
+    color: var(--link-color);
+    padding: 2px 6px;
+    border-radius: 5px; /* XXX do I need browser specific rules? */
+    text-decoration: none;
+    white-space: nowrap;
+    border-style: solid;
+    border-color: var(--link-color);
+    font-family: var(--normal-font);
+    font-weight: 600;
+    border-width: 1px;
+}
+
+@media (max-width: 1150px) {
+    input.button {
+        background-color: var(--accent-color);
+        color: #FFF;
+        border-width: 0;
+    }
+}
+
 .next-link {
     margin-left: auto;
 }
 
 .search-bar {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
     text-align: center;
+}
+
+.search-bar-form {
+    display: flex;
+    gap: 10px;
+}
+
+.search-input {
+    flex-grow: 1;
+    height: 1.5em;
 }
 
 /* small pic of me with a short description */
