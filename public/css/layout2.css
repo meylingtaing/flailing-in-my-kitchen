@@ -17,6 +17,13 @@
     .sidebar-box, #original-blog-tagline, .flailing-in-my-kitchen-text {
         display: none;
     }
+
+    /* A little extra space below them because they appear in the header,
+     * above the main white box container */
+    .prev-next-links {
+        margin-bottom: .5em;
+    }
+
 }
 
 /* Small screens, blog posts are single column,
