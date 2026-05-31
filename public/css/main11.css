@@ -18,7 +18,7 @@ body {
     font-family: "Handlee";
     font-size: xxx-large;
     margin-bottom: 0;
-    color: #1D8;
+    color: var(--accent-color);
     text-decoration: none;
 }
 
@@ -114,7 +114,7 @@ a.prev-link, a.next-link {
 /* the main divider that gets used */
 hr {
     border: 0;
-    border-top: 3px dashed #0A6;
+    border-top: 3px dashed var(--accent-color);
 }
 
 /* for styling content inside of a blog post */
@@ -178,7 +178,7 @@ table {
 /* divider inside of a blog post */
 .entry-container hr {
     border: 0;
-    border-top: 2px dashed #098;
+    border-top: 2px dashed var(--accent-color);
     width: 75%;
     margin: auto;
     padding-bottom: 1em;
