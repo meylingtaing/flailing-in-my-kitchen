@@ -4,10 +4,12 @@
   %= include '_mini_about';
 
   <div class="sidebar-box">
-    <div class="white-box-container">
+    <div id="white-box-sidebar" class="white-box-container">
       %= include '_sidebar_links';
       <%= $sidebar_content %>
     </div>
+
+    <img src="/kitchen-sm.png" class="fanart" title="Digital drawing of 'flailing in my kitchen' with a dog making and spilling eggs in the kitchen. Created by bogo" />
 
     % if (my $tagline_links = stash('tagline_links')) {
       <div class="blog-tagline below-sidebar-box">

@@ -102,5 +102,11 @@
     .flailing-in-my-kitchen-image {
         display: none;
     }
+
+    .sidebar-box, #white-box-sidebar {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
 }
 

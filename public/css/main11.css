@@ -274,3 +274,7 @@ figcaption {
 .tooltip-hover:hover .tooltip {
     display: block;
 }
+
+.fanart, .flailing-in-my-kitchen-image {
+    border-radius: 5px;
+}
