@@ -24,6 +24,10 @@ body {
 .faded-green { color: #0A6 }
 .small       { font-size: 50% }
 
+.flailing-in-my-kitchen-image {
+    margin-bottom: .5rem;
+}
+
 .blog-tagline {
     font-family: "Handlee";
     font-size: 1.25rem;
