@@ -154,6 +154,11 @@ input.button {
     font-size: 1.25rem;
 }
 
+#on-this-page-list {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
 /* the main divider that gets used */
 hr {
     border: 0;

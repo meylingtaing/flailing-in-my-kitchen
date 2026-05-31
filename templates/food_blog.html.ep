@@ -29,7 +29,7 @@
       % } else {
         <div class="link-header">Posts on this page:</div>
       % }
-      <ul>
+      <ul id="on-this-page-list">
       % for my $update (@$updates) {
           <li><a href="#blog-post-<%== $update->{id} %>">
             <%== $update->{title} %>
