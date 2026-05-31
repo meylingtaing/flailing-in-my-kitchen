@@ -1,9 +1,13 @@
 body {
+    --text-on-background: #3b3233;
+    --link-color: #596de0;
+    --background-color: #d5e0ff;
+    --normal-font: "Fira Sans", sans-serif;
     --accent-color: #dd7f7f;
 
-    background-color: #333;
-    color: #CCC; /* basically just the tagline */
-    font-family: "Fira Sans", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-on-background); /* basically just the tagline */
+    font-family: var(--normal-font);
     margin: auto;
     line-height: 1.5;
 }
@@ -40,7 +44,7 @@ body {
 .blog-tagline > a {
     text-decoration: none;
     font-weight: bold;
-    color: #1D8;
+    color: var(--link-color);
 }
 
 .top-links, body > .tag-description {
@@ -50,7 +54,7 @@ body {
 
 /* links outside the box */
 a {
-    color: #8DF; /* light blue */
+    color: var(--link-color);
     text-decoration: underline;
 }
 
@@ -63,7 +67,7 @@ a {
 }
 
 .white-box-container a {
-    color: #098; /* teal */
+    color: var(--link-color);
     text-decoration: underline;
 }
 
@@ -93,7 +97,7 @@ a.prev-link, a.next-link {
 .mini-about {
     margin-bottom: 1rem;
     margin-top: 2rem;
-    color: #CCC;
+    color: var(--text-on-background);
     display: flex;
     grid-gap: 1rem;
 }
@@ -213,7 +217,7 @@ figcaption {
 .tooltip-hover {
     position: relative;
     cursor: pointer;
-    color: #098;
+    color: var(--link-color);
     white-space: nowrap;
 }
 
@@ -230,7 +234,7 @@ figcaption {
     border-radius: 5px;
     border: solid;
     border-width: 2px;
-    border-color: #098;
+    border-color: var(--link-color);
     font-weight: normal;
     font-style: normal;
 }
