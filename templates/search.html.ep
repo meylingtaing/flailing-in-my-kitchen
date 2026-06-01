@@ -18,14 +18,7 @@
   </ul>
 </div>
 
-<div class="grid-sidebar">
-  %= include '_mini_about';
+%= include '_sidebar', sidebar_content => '';
 
-  <div class="sidebar-box">
-    <div class="white-box-container">
-      %= include '_sidebar_links';
-    </div>
-  </div>
-</div>
 
 </div>
