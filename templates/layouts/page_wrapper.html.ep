@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport"
    content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="/css/layout2.css">
+  <link rel="stylesheet" href="/css/layout3.css">
   <link rel="stylesheet" href="/css/main12.css">
   % for my $css (@{ stash('css_files') // [] }) {
   <link rel="stylesheet" href="/css/<%= $css %>">
