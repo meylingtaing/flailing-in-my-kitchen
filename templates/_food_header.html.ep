@@ -2,7 +2,7 @@
   <h1 class="blog-title">
     <a href="/">
       <span class="flailing-in-my-kitchen-text">
-        flailing in my kitchen&nbsp;<sup><span class="small faded-green">v3.1</span></sup>
+        flailing in my kitchen&nbsp;<sup><span class="small v-whatever">v3.1</span></sup>
       </span>
       <img src="/kitchen-sm.png" class="flailing-in-my-kitchen-image" title="Digital drawing of 'flailing in my kitchen' with a dog making and spilling eggs in the kitchen. Created by bogo" />
     </a>

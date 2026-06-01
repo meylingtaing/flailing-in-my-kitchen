@@ -3,6 +3,7 @@ body {
     --link-color: #596de0;
     --header-font: "Comic Sans MS", "Comic Sans", "Handlee";
     --background-color: #d5e0ff;
+    --secondary-background-color: #fff;
     --normal-font: "Fira Sans", sans-serif;
     --accent-color: #dd7f7f;
 
@@ -28,7 +29,7 @@ body {
 }
 
 /* used on the v whatever next to the title */
-.faded-green { color: #0A6 }
+.v-whatever  { color: #fe6700 }
 .small       { font-size: 50% }
 
 .flailing-in-my-kitchen-image {
@@ -61,7 +62,7 @@ a {
 /* the white box that surrounds the blog posts */
 .white-box-container {
     color: #555;
-    background-color: #FFF;
+    background-color: var(--secondary-background-color);
     margin-bottom: .5rem;
     border-radius: 5px;
 }
@@ -86,7 +87,7 @@ a.prev-link, a.next-link, a.button {
 }
 
 input.button {
-    background-color: var(--background-color);
+    background-color: #eff3ff;
     color: var(--link-color);
     padding: 2px 6px;
     border-radius: 5px; /* XXX do I need browser specific rules? */
@@ -143,9 +144,6 @@ input.button {
 .mini-about img {
     clip-path:circle();
     max-height: 150px; /* XXX: is there a better unit to use here?? */
-}
-
-.grid-sidebar img {
     margin-bottom: 1rem;
 }
 
@@ -154,8 +152,12 @@ input.button {
     font-size: 1.25em;
 }
 
+#white-box-sidebar > .tag-description {
+    font-family: var(--header-font);
+}
+
 #on-this-page-list {
-    margin-top: 0px;
+    margin-top: -5px;
     margin-bottom: 10px;
 }
 
@@ -199,14 +201,14 @@ li {
 }
 
 blockquote {
-    border-left: 3px dashed #098;
+    border-left: 3px dashed var(--accent-color);
     padding-left: 1em;
     font-style: italic;
     font-weight: bold;
 }
 
 table, tr, td, th {
-    border: 1px solid #098;
+    border: 1px solid var(--accent-color);
     padding: .25em;
     border-collapse: collapse;
 }
