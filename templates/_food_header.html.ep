@@ -1,12 +1,8 @@
 <div class="blog-header">
-  <h1 class="blog-title">
     <a href="/">
-      <span class="flailing-in-my-kitchen-text">
-        flailing in my kitchen&nbsp;<sup><span class="small v-whatever">v3.1</span></sup>
-      </span>
+      <img src="/header-lg.png" class="flailing-in-my-kitchen-text" title="Hand-written 'flailing in my kitchen v3.1'" />
       <img src="/kitchen-sm.png" class="flailing-in-my-kitchen-image" title="Digital drawing of 'flailing in my kitchen' with a dog making and spilling eggs in the kitchen. Created by bogo" />
-    </a>
-  </h1>
+      </a>
   <!--
     This is a bit weird, but I'm basically trying to always display the
     original blog tagline on larger displays (because the modified one appears
