@@ -108,5 +108,12 @@
         flex-direction: column;
         row-gap: 10px;
     }
+
+    /* My imgs are display: block; by default, so make this inline, because
+     * it's a link and I don't want any whitespace outside the image to be
+     * click-able */
+    .flailing-in-my-kitchen-text {
+        display: inline;
+    }
 }
 
