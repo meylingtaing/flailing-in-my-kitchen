@@ -18,6 +18,10 @@
         display: none;
     }
 
+    .flailing-in-my-kitchen-image {
+        display: inline;
+    }
+
     /* A little extra space below them because they appear in the header,
      * above the main white box container */
     .prev-next-links {
